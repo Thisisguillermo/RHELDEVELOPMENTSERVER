@@ -39,14 +39,14 @@ sudo dnf install -y gnome-tweaks
 sudp dnf install -y spice-vdagent
 
 # GUI installation.
-sudo dnf groupinstall -y "GNOME Desktop" --skip-broken
-sudo dnf groupinstall -y "Graphical Administration Tools" --skip-broken
+#sudo dnf groupinstall -y "GNOME Desktop" --skip-broken
+#sudo dnf groupinstall -y "Graphical Administration Tools" --skip-broken
 
 # Set target to graphical.target to run GUI.
-sudo systemctl set-default graphical.target
+#sudo systemctl set-default graphical.target
 
 # Immediately GUI for server.
-sudo systemctl isolate graphical.target
+#sudo systemctl isolate graphical.target
 
 # Profilings tools
 # perf is based on the perf_events system, which is based on event-based sampling, and it uses CPU performance counters to profile the application.
