@@ -35,6 +35,7 @@ sudo dnf install -y deja-dup
 sudo dnf install -y vim
 sudo dnf install -y podman-docker 
 sudo dnf install -y ansible
+sudo dnf install -y gnome-tweaks
 sudp dnf install -y spice-vdagent
 
 # GUI installation.
