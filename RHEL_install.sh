@@ -34,7 +34,17 @@ sudo dnf install -y jpegoptim
 sudo dnf install -y deja-dup 
 sudo dnf install -y vim
 sudo dnf install -y podman-docker 
-sudo dnf install -y ansible 
+sudo dnf install -y ansible
+
+# GUI installation.
+sudo dnf groupinstall -y "GNOME Desktop" --skip-broken
+sudo dnf groupinstall -y "Graphical Administration Tools" --skip-broken
+
+# Set target to graphical.target to run GUI.
+sudo systemctl set-default graphical.target
+
+# Immediately GUI for server.
+sudo systemctl isolate graphical.target
 
 # Profilings tools
 # perf is based on the perf_events system, which is based on event-based sampling, and it uses CPU performance counters to profile the application.
@@ -45,3 +55,6 @@ sudo dnf install -y ansible
 
 sudo dnf install -y perf
 sudo dnf install -y gperftools
+
+
+# Made by Guillermo
