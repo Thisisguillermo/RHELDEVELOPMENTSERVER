@@ -56,5 +56,9 @@ sudo systemctl isolate graphical.target
 sudo dnf install -y perf
 sudo dnf install -y gperftools
 
+# Programming languages
+sudo dnf install -y python3
+sudo dnf install -y nodejs
+
 
 # Made by Guillermo
