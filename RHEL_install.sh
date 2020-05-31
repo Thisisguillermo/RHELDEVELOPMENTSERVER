@@ -37,6 +37,7 @@ sudo dnf install -y podman-docker
 sudo dnf install -y ansible
 sudo dnf install -y gnome-tweaks
 sudo dnf install -y spice-vdagent
+sudo dnf install -y sreen
 
 # Lynis is one of the most trusted automated auditing tool for software patch management, malware scanning and vulnerability detecting in Unix/Linux based systems. (https://cisofy.com/)
 sudo dnf install -y lynis
